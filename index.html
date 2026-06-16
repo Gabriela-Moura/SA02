@@ -3,61 +3,134 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsToday</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-    <div class="topo">
-        <h1>NewsToday</h1>
+    <header>
+        <img src="imagens/logo.png" alt="News Today" class="logo">
+        <h1 class="titulo">News Today</h1>
+        
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="tech.html">Tecnologia</a>
+            <a href="esportes.html">Esportes</a>
+            <a href="economia.html">Economia</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Em destaque</h2>
+        <section>
+            <article class="destaque">
+                <h3 class="titulo_noticia">Brasil empata com Marrocos em estreia da Copa do Mundo de 2026</h3>
+                
+                <img class="imagem" src="imagens/esporte1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
+                
+                <p class="descricao">A Seleção Brasileira estreou na Copa do Mundo de 2026 com um empate por 1 a 1 contra Marrocos pelo Grupo C, realizada em 13 de junho.</p>
 
-        <div class="menu">
-            <a href="#">Início</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Esportes</a>
-            <a href="#">Economia</a>
-            <a href="#">Contato</a>
-        </div>
-    </div>
+                <p class="descricao">O Brasil abriu o placar no primeiro tempo, mas os marroquinos empataram antes do intervalo. Na segunda etapa, os brasileiros tiveram mais posse de bola e buscaram a vitória sem sucesso. Marrocos também criou chances perigosas em contra-ataques e quase virou a partida. Com o resultado, ambas as equipes somam um ponto e seguem na disputa pela classificação.</p>
 
-    <div class="conteudo">
+                <p class="descricao"><strong>Data e horário:</strong> 13 de junho de 2026 | 19h00</p>
+                
+                <p class="descricao"><strong>Autor:</strong> Gabriela Moura | News Today Sports</p>
+                
+                <a href="tech1.html" class="botao">Leia mais</a>
+                <!-- <button class="botao">Leia mais</button> -->
 
-        <div class="noticia">
-            <img src="https://blog.fazedores.com/wp-content/uploads/2019/03/casa2.jpg">
+                <p class="esporte">Esporte</p>
+            </article>
+        </section>
+        
+        <h2>Nóticias das últimas 24h</h2>
 
-            <h2>Nova tecnologia promete revolucionar o mercado</h2>
+        <section class="noticias_recentes">
+            <article class="recentes">
+                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
+                
+                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
+                
+                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
 
-            <p>
-                Empresas de tecnologia investem em novas soluções para melhorar a produtividade.
-            </p>
-        </div>
+                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
+                
+                <p class="descricao">Carlos Eduardo | News Today Tech</p>
 
-        <div class="noticia">
-            <img
-                src="https://s3.sa-east-1.amazonaws.com/cdn.nasajon/wp-content/uploads/2022/08/16161618/A-influencia-da-tecnologia-no-comercio.png">
+                <button class="botao">Leia mais</button>
 
-            <h2>Pesquisa aponta crescimento do setor digital</h2>
+                <p class="esporte">Esporte</p>
+            </article>
 
-            <p>
-                O setor apresentou crescimento significativo nos últimos anos.
-            </p>
-        </div>
+            <article class="recentes">
+                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
+                
+                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
+                
+                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
 
-        <div class="noticia">
-            <img src="https://i0.wp.com/nectar.empregare.com/wp-content/uploads/2021/11/1-1.jpg?resize=800%2C534&ssl=1">
+                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
+                
+                <p class="descricao">Carlos Eduardo | News Today Tech</p>
 
-            <h2>Mercado de trabalho exige novas competências</h2>
+                <button class="botao">Leia mais</button>
+                
+                <p class="tech">Tecnologia</p>
+            </article>
 
-            <p>
-                Profissionais buscam atualização constante para acompanhar as mudanças.
-            </p>
-        </div>
+            <article class="recentes">
+                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
+                
+                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
+                
+                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
 
-    </div>
+                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
+                
+                <p class="descricao">Carlos Eduardo | News Today Tech</p>
 
-    <div class="rodape">
-        NewsToday © 2026
-    </div>
+                <button class="botao">Leia mais</button>
+
+                <p class="economia">Economia</p>
+            </article>
+
+            <article class="recentes">
+                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
+                
+                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
+                
+                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
+
+                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
+                
+                <p class="descricao">Carlos Eduardo | News Today Tech</p>
+
+                <button class="botao">Leia mais</button>
+
+                <p class="tech">Tecnologia</p>
+            </article>
+
+            <article class="recentes">
+                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
+                
+                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
+                
+                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
+
+                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
+                
+                <p class="descricao">Carlos Eduardo | News Today Tech</p>
+
+                <button class="botao">Leia mais</button>
+
+                <p class="esporte">Esporte</p>
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="rodape">NewsToday © 2026</p>
+    </footer>
 </body>
-
 </html>
