@@ -3,82 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Today - Economia</title>
+    <title>NewsToday - Economia</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="imagens/logo2.png" type="image/png">
 </head>
     <body>
         <header>
             <img src="imagens/logo.png" alt="News Today" class="logo">
-            <h1 class="titulo">News Today - Economia</h1>
-            
+            <h1 class="titulo">NewsToday - Economia</h1>
+            <!-- Menu -->
             <nav class="menu">
-                <a href="index.html">Início</a>
-                <a href="tech.html">Tecnologia</a>
-                <a href="esportes.html">Esportes</a>
-                <a href="economia.html">Economia</a>
-                <a href="contato.html">Contato</a>
+                <a class="link_menu" href="index.html">Início</a>
+                <a class="link_menu" href="tech.html">Tecnologia</a>
+                <a class="link_menu" href="esportes.html">Esportes</a>
+                <a class="link_menu" href="economia.html">Economia</a>
+                <a class="link_menu" href="contato.html">Contato</a>
             </nav>
         </header>
         <main>
             <h2>Economia</h2>
             <section>
                 <article class="destaque">
-                    <h3 class="titulo_noticia">Dólar recua frente ao real</h3>
-                    
-                    <img class="imagem" src="imagens/economia2.png" alt="adicionar">
-                    
-                    <p class="descricao">O dólar registrou queda frente ao real após a divulgação de indicadores econômicos positivos e expectativas favoráveis para a economia brasileira. O movimento chamou a atenção de investidores e analistas do mercado financeiro.</p>
-
-                    <p class="descricao">A valorização da moeda brasileira pode reduzir os custos de produtos importados e impactar diversos setores da economia. Especialistas ressaltam que o comportamento do câmbio continuará sendo influenciado por fatores nacionais e internacionais.</p>
-
-                    <p class="descricao"><strong>Data e horário:</strong> 14 de junho de 2026 | 10h30</p>
-                    
-                    <p class="descricao"><strong>Autor:</strong> Anna Hilda Castelani | News Today Economia</p>
-                    
-                    <button class="botao">Leia mais</button>
-
-                    <p class="economia">Economia</p>
-                </article>
-
-                <article class="destaque">
-                    <h3 class="titulo_noticia">Banco Central mantém taxa de juros</h3>
-                    
-                    <img class="imagem" src="imagens/economia1.png" alt="adicionar">
-                    
-                    <p class="descricao">O Banco Central anunciou a manutenção da taxa básica de juros após reunião do Comitê de Política Monetária (Copom). A decisão foi tomada com o objetivo de controlar a inflação e garantir a estabilidade da economia brasileira nos próximos meses.</p>
-
-                    <p class="descricao">Especialistas afirmam que a manutenção dos juros influencia diretamente o consumo, os investimentos e o acesso ao crédito. A medida também busca equilibrar o crescimento econômico diante das incertezas do cenário internacional.</p>
-
-                    <p class="descricao"><strong>Data e horário:</strong> 12 de junho de 2026 | 18h00</p>
-                    
-                    <p class="descricao"><strong>Autor:</strong> Lara Domingos | News Today Economia</p>
-                    
-                    <button class="botao">Leia mais</button>
-
-                    <p class="economia">Economia</p>
-                </article>
-
-                <article class="destaque">
-                    <h3 class="titulo_noticia"> Governo anuncia investimentos em infraestrutura</h3>
-                    
-                    <img class="imagem" src="imagens/economia3.png" alt="adicionar">
-                    
+                    <h3 class="titulo_noticia">Governo anuncia pacote de investimentos para ampliar infraestrutura nacional</h3>
+                    <!-- Imagem relacionada a noticia -->
+                    <img class="imagem" src="imagens/economia3.png" alt="O presidente Luiz Inácio Lula da Silva aparece em primeiro plano durante um discurso, vestindo terno cinza claro e camisa azul-clara sem gravata. Ele fala diante de dois microfones enquanto faz um gesto com a mão direita, mantendo uma expressão séria e concentrada. Ao fundo, desfocadas, aparecem cores que remetem à bandeira do Brasil, compondo um cenário institucional e oficial.">
+                    <!-- Resumo da notícia -->
                     <p class="descricao">O governo anunciou novos investimentos em infraestrutura para modernizar rodovias, ferrovias e portos em diversas regiões do país. A iniciativa busca impulsionar o crescimento econômico e melhorar a logística nacional.</p>
 
                     <p class="descricao">Os recursos serão destinados a projetos considerados estratégicos para aumentar a competitividade das empresas e facilitar o transporte de mercadorias. A expectativa é que as obras também gerem empregos e movimentem a economia brasileira.</p>
 
-                    <p class="descricao"><strong>Data e horário:</strong> 16 de junho de 2026 | 09h00</p>
+                    <p class="data"><strong>Data e horário:</strong> 15 de junho de 2026 | 09h00</p>
                     
-                    <p class="descricao"><strong>Autor:</strong> Lara Domingos | News Today Tech</p>
-                    
-                    <button class="botao">Leia mais</button>
-
-                    <p class="economia">Economia</p>
+                    <p class="autor"><strong>Autor:</strong> Lara Domingos | NewsToday Economia</p>
+                    <!-- Botão que leva o usuário para a notícia completa -->
+                    <a href="pagina_noticia/economia/infraestrutura.html" class="botao">Leia mais</a>
+                    <!-- Mostra ao usuário que essa notícia pertence a categoria economia -->
+                    <a href="economia.html" class="economia">Economia</a>
                 </article>
+
+                <article class="destaque">
+                    <h3 class="titulo_noticia">Dólar recua frente ao real</h3>
+                    <!-- Imagem relacionada a noticia -->
+                    <img class="imagem" src="imagens/economia2.png" alt="Cédulas de dólar e de real, além de moedas, organizadas sobre uma mesa ao lado de um celular e uma caneta, representando o mercado cambial e a relação entre as moedas.">
+                    <!-- Resumo da notícia -->
+                    <p class="descricao">O dólar registrou queda frente ao real após a divulgação de indicadores econômicos positivos e expectativas favoráveis para a economia brasileira. O movimento chamou a atenção de investidores e analistas do mercado financeiro.</p>
+
+                    <p class="descricao">A valorização da moeda brasileira pode reduzir os custos de produtos importados e impactar diversos setores da economia. Especialistas ressaltam que o comportamento do câmbio continuará sendo influenciado por fatores nacionais e internacionais.</p>
+
+                    <p class="data"><strong>Data e horário:</strong> 14 de junho de 2026 | 10h30</p>
+                    
+                    <p class="autor"><strong>Autor:</strong> Anna Hilda Castelani | NewsToday Economia</p>
+                    <!-- Botão que leva o usuário para a notícia completa -->
+                    <a href="pagina_noticia/economia/dolar.html" class="botao">Leia mais</a>
+                    <!-- Mostra ao usuário que essa notícia pertence a categoria economia -->
+                    <a href="economia.html" class="economia">Economia</a>
+                </article>
+
+                <article class="destaque">
+                    <h3 class="titulo_noticia">Banco Central mantém taxa de juros</h3>
+                    <!-- Imagem relacionada a noticia -->
+                    <img class="imagem" src="imagens/economia1.png" alt="Fachada do Banco Central do Brasil com o nome da instituição e seu logotipo metálico em destaque sobre uma parede de granito.">
+                    <!-- Resumo da notícia -->
+                    <p class="descricao">O Banco Central anunciou a manutenção da taxa básica de juros após reunião do Comitê de Política Monetária (Copom). A decisão foi tomada com o objetivo de controlar a inflação e garantir a estabilidade da economia brasileira nos próximos meses.</p>
+
+                    <p class="descricao">Especialistas afirmam que a manutenção dos juros influencia diretamente o consumo, os investimentos e o acesso ao crédito. A medida também busca equilibrar o crescimento econômico diante das incertezas do cenário internacional.</p>
+
+                    <p class="data"><strong>Data e horário:</strong> 12 de junho de 2026 | 18h00</p>
+                    
+                    <p class="autor"><strong>Autor:</strong> Lara Domingos | NewsToday Economia</p>
+                    <!-- Botão que leva o usuário para a notícia completa -->
+                    <a href="pagina_noticia/economia/juros.html" class="botao">Leia mais</a>
+                    <!-- Mostra ao usuário que essa notícia pertence a categoria economia -->
+                    <a href="economia.html" class="economia">Economia</a>
+                </article>
+
             </section>
-                </main>
+        </main>
+        <!-- Rodapé -->
         <footer>
-            <p class="rodape">NewsToday © 2026</p>
+            <p>NewsToday © 2026</p>
+            <p>E-mail: newstoday@newstoday.com.br</p>
+            <p>Telefone: (19) 99765-9876</p>
+            <p>Endereço: São Paulo - SP, Brasil</p>
+            <p>Instagram: @newstoday</p>
+            <p>Facebook: NewsToday</p>
         </footer>
     </body>
 </html>

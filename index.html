@@ -6,131 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsToday</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="imagens/logo2.png" type="image/png">
 </head>
 
 <body>
     <header>
         <img src="imagens/logo.png" alt="News Today" class="logo">
-        <h1 class="titulo">News Today</h1>
-        
+        <h1 class="titulo">NewsToday</h1>
+        <!-- menu -->
         <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="tech.html">Tecnologia</a>
-            <a href="esportes.html">Esportes</a>
-            <a href="economia.html">Economia</a>
-            <a href="contato.html">Contato</a>
+            <a class="link_menu" href="index.html">Início</a>
+            <a class="link_menu" href="tech.html">Tecnologia</a>
+            <a class="link_menu" href="esportes.html">Esportes</a>
+            <a class="link_menu" href="economia.html">Economia</a>
+            <a class="link_menu" href="contato.html">Contato</a>
         </nav>
     </header>
     <main>
         <h2>Em destaque</h2>
+        <!-- Notícia que está em destaque -->
         <section>
             <article class="destaque">
                 <h3 class="titulo_noticia">Brasil empata com Marrocos em estreia da Copa do Mundo de 2026</h3>
-                
-                <img class="imagem" src="imagens/esporte1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
-                
+                <!-- Imagem relacionada a notícia -->
+                <img class="imagem" src="imagens/sport2.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
+                <!-- Resumo da notícia -->
                 <p class="descricao">A Seleção Brasileira estreou na Copa do Mundo de 2026 com um empate por 1 a 1 contra Marrocos pelo Grupo C, realizada em 13 de junho.</p>
 
-                <p class="descricao">O Brasil abriu o placar no primeiro tempo, mas os marroquinos empataram antes do intervalo. Na segunda etapa, os brasileiros tiveram mais posse de bola e buscaram a vitória sem sucesso. Marrocos também criou chances perigosas em contra-ataques e quase virou a partida. Com o resultado, ambas as equipes somam um ponto e seguem na disputa pela classificação.</p>
+                <p class="descricao">O Marrocos abriu o placar no primeiro tempo, mas os brasileiros empataram antes do intervalo. Na segunda etapa, os brasileiros tiveram mais posse de bola e buscaram a vitória sem sucesso. Marrocos também criou chances perigosas em contra-ataques e quase virou a partida. Com o resultado, ambas as equipes somam um ponto e seguem na disputa pela classificação.</p>
 
-                <p class="descricao"><strong>Data e horário:</strong> 13 de junho de 2026 | 19h00</p>
+                <p class="data"><strong>Data e horário: </strong> 13 de junho de 2026 | 19h00</p>
                 
-                <p class="descricao"><strong>Autor:</strong> Gabriela Moura | News Today Sports</p>
-                
-                <a href="tech1.html" class="botao">Leia mais</a>
-                <!-- <button class="botao">Leia mais</button> -->
-
-                <p class="esporte">Esporte</p>
+                <p class="autor"><strong>Autor: </strong> Gabriela Moura | NewsToday Esportes</p>
+                <!-- Botão que leva o usuário para a notícia completa -->
+                <a href="pagina_noticia/esporte/brasil_marrocos.html" class="botao">Leia mais</a>
+                <!-- Mostra ao usuário que essa notícia pertence a categoria esporte -->
+                <a href="esportes.html" class="esporte">Esporte</a>
             </article>
         </section>
         
         <h2>Nóticias das últimas 24h</h2>
 
         <section class="noticias_recentes">
+
             <article class="recentes">
-                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
-                
-                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
-                
-                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
+                <h3 class="titulo_noticia">Investimento bilionário em robótica com IA</h3>
+                <!-- Imagem relacionada a notícia -->
+                <img class="img_recente" src="imagens/tech1.png" alt="Um homem de cabelos claros, vestindo blazer preto, camiseta escura, calça preta e sapatos sociais, posa sorrindo ao lado de um robô humanoide de grande porte nas cores branca e preta. O robô possui cabeça preta brilhante sem traços faciais visíveis, estrutura robusta com articulações aparentes nos braços e pernas, e o nome “NEURA” estampado no peito. Ambos estão sobre um palco de piso escuro, diante de um grande painel azul iluminado com a marca “NEURA” em destaque e uma composição gráfica que lembra ondas de dados digitais, criando um ambiente futurista associado à robótica e à inteligência artificial.">
+                <!-- Resumo da notícia -->
+                <p class="descricao">A empresa alemã Neura Robotics anunciou um investimento de US$ 1,4 bilhão para acelerar o desenvolvimento de robôs com Inteligência Artificial. Os recursos serão usados para aprimorar sistemas de aprendizado de máquina e ampliar a produção de robôs para aplicações industriais e comerciais, reforçando o avanço da automação e da IA na economia mundial.</p>
 
-                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
-                
-                <p class="descricao">Carlos Eduardo | News Today Tech</p>
-
-                <button class="botao">Leia mais</button>
-
-                <p class="esporte">Esporte</p>
+                <p class="data"><strong>Data: </strong> 15 de junho de 2026 | 8h40</p>
+                    
+                <p class="autor"><strong>Autor: </strong> Lara Domingos | NewsToday Tecnologia</p>
+                <!-- Botão que leva o usuário para a notícia completa -->
+                <a href="pagina_noticia/tecnologia/neura_robotica.html" class="botao">Leia mais</a>
+                <!-- Mostra ao usuário que essa notícia pertence a categoria tecnologia -->
+                <a href="tech.html" class="tech">Tecnologia</a>
             </article>
 
             <article class="recentes">
-                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
-                
-                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
-                
-                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
+                <h3 class="titulo_noticia">Governo anuncia pacote de investimentos para ampliar infraestrutura nacional</h3>
+                <!-- Imagem relacionada a notícia -->
+                <img class="img_recente" src="imagens/economia3.png" alt="O presidente Luiz Inácio Lula da Silva aparece em primeiro plano durante um discurso, vestindo terno cinza claro e camisa azul-clara sem gravata. Ele fala diante de dois microfones enquanto faz um gesto com a mão direita, mantendo uma expressão séria e concentrada. Ao fundo, desfocadas, aparecem cores que remetem à bandeira do Brasil, compondo um cenário institucional e oficial.">
+                <!-- Resumo da notícia -->
+                <p class="descricao">O governo anunciou novos investimentos em infraestrutura para modernizar rodovias, ferrovias e portos em diversas regiões do país. A medida busca impulsionar o crescimento econômico, melhorar a logística nacional e facilitar o transporte de mercadorias. Além disso, a expectativa é que as obras gerem empregos e fortaleçam a economia brasileira.</p>
 
-                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
-                
-                <p class="descricao">Carlos Eduardo | News Today Tech</p>
-
-                <button class="botao">Leia mais</button>
-                
-                <p class="tech">Tecnologia</p>
+                <p class="data"><strong>Data: </strong>15 de junho de 2026 | 09h00</p>
+                    
+                <p class="autor"><strong>Autor: </strong>Lara Domingos | NewsToday Economia</p>
+                <!-- Botão que leva o usuário para a notícia completa -->
+                <a href="pagina_noticia/economia/infraestrutura.html" class="botao">Leia mais</a>
+                <!-- Mostra ao usuário que essa notícia pertence a categoria economia -->
+                <a href="economia.html" class="economia">Economia</a>
             </article>
 
             <article class="recentes">
-                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
-                
-                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
-                
-                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
+                <h3 class="titulo_noticia">Espanha tropeça e estreia com empate na Copa do Mundo</h3>
+                <!-- Imagem relacionada a notícia -->
+                <img class="img_recente" src="imagens/sport1.png" alt="Uma disputa intensa acontece dentro da área durante uma partida entre a seleção da Espanha, de uniforme vermelho e azul, e a seleção de Cabo Verde, de uniforme branco. O goleiro cabo-verdiano Vozinha, vestindo uniforme amarelo, salta em frente ao gol e segura a bola acima da cabeça enquanto jogadores das duas equipes disputam a jogada aérea. Ao fundo, a rede do gol, torcedores nas arquibancadas e painéis publicitários iluminados reforçam o clima de tensão e competitividade.">
+                <!-- Resumo da notícia -->
+                <p class="descricao">A Espanha estreou na Copa do Mundo de 2026 com um empate sem gols contra Cabo Verde pelo Grupo H, em 15 de junho. Apesar de dominar a posse de bola e criar diversas chances, a seleção espanhola não conseguiu superar a forte defesa adversária. O destaque da partida foi o goleiro cabo-verdiano Vozinha, de 40 anos, que fez importantes defesas e garantiu o empate.</p>
 
-                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
-                
-                <p class="descricao">Carlos Eduardo | News Today Tech</p>
-
-                <button class="botao">Leia mais</button>
-
-                <p class="economia">Economia</p>
+                <p class="data"><strong>Data: </strong> 15 de junho de 2026 | 19h00</p>
+                    
+                <p class="autor"><strong>Autor: </strong> Gabriela Moura | NewsToday Esportes</p>
+                <!-- Botão que leva o usuário para a notícia completa -->
+                <a href="pagina_noticia/esporte/espanha_cabo_verde.html" class="botao">Leia mais</a>
+                <!-- Mostra ao usuário que essa notícia pertence a categoria esporte -->
+                <a href="esportes.html" class="esporte">Esporte</a>
             </article>
 
-            <article class="recentes">
-                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
-                
-                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
-                
-                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
-
-                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
-                
-                <p class="descricao">Carlos Eduardo | News Today Tech</p>
-
-                <button class="botao">Leia mais</button>
-
-                <p class="tech">Tecnologia</p>
-            </article>
-
-            <article class="recentes">
-                <h3 class="titulo_noticia">Nova inteligência artificial auxilia estudantes em tarefas escolares</h3>
-                
-                <img class="img_recente" src="imagens/noticia1.png" alt="A imagem mostra uma partida de futebol em um estádio lotado, com um jogador da seleção brasileira, vestindo uniforme amarelo e azul, disputando a bola com dois adversários de uniforme vermelho e verde. O atleta brasileiro aparece em movimento, esticando a perna para alcançar a bola, enquanto um dos defensores tenta interceptá-la. Ao fundo, a torcida colorida ocupa grande parte das arquibancadas, criando um cenário vibrante e cheio de energia.">
-                
-                <p class="descricao">Uma nova plataforma de inteligência artificial vem ganhando espaço nas escolas ao oferecer suporte para pesquisas, organização de estudos e resolução de dúvidas em diversas disciplinas.</p>
-
-                <p class="descricao">Data e horário: 13 de junho de 2026 | 19h00</p>
-                
-                <p class="descricao">Carlos Eduardo | News Today Tech</p>
-
-                <button class="botao">Leia mais</button>
-
-                <p class="esporte">Esporte</p>
-            </article>
         </section>
         
     </main>
+    <!-- Rodapé -->
     <footer>
-        <p class="rodape">NewsToday © 2026</p>
+        <p>NewsToday © 2026</p>
+        <p>E-mail: newstoday@newstoday.com.br</p>
+        <p>Telefone: (19) 99765-9876</p>
+        <p>Endereço: São Paulo - SP, Brasil</p>
+        <p>Instagram: @newstoday</p>
+        <p>Facebook: NewsToday</p>
     </footer>
 </body>
 </html>

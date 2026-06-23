@@ -33,11 +33,28 @@ a{
     text-decoration: none;
 }
 
+.link_menu:hover{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #f8e3e3;
+    color:#740000; 
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.link_menu:active{
+    border: 2px solid #f8e3e3;
+    background-color: #740000;
+    color: #f8e3e3;
+}
+
 h2, h3{
     color: #740000;
     display: flex;
     justify-content: center;
     font-family: Georgia, serif;
+    text-align: center;
 }
 
 .destaque{
@@ -67,6 +84,26 @@ h2, h3{
     padding-right: 10px;
 }
 
+.autor{
+    font-family: Arial, sans-serif;
+    display: flex;
+    text-align:left;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data{
+    font-family: Arial, sans-serif;
+    display: flex;
+    text-align:left;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .esporte{
     font-family: Arial, sans-serif;
     border: 2px solid rgb(255, 0, 0);
@@ -77,6 +114,18 @@ h2, h3{
     display: flex;
     justify-self: end;
     justify-content: center;
+    color: black;
+    margin-top: 5px;
+}
+
+.esporte:hover{
+    color: white;
+    background-color: red;    
+}
+
+.esporte:active{
+    color: black;
+    background-color: rgb(255, 172, 172);    
 }
 
 .tech{
@@ -89,6 +138,18 @@ h2, h3{
     display: flex;
     justify-self: end;
     justify-content: center;
+    color: black;
+    margin-top: 5px;
+}
+
+.tech:hover{
+    color: white;
+    background-color: rgb(0, 72, 255);    
+}
+
+.tech:active{
+    color: black;
+    background-color: rgb(172, 201, 255);    
 }
 
 .economia{
@@ -101,6 +162,16 @@ h2, h3{
     display: flex;
     justify-self: end;
     justify-content: center;
+    color: black;
+    margin-top: 5px;
+}
+
+.economia:hover{
+    background-color: rgb(255, 242, 0);    
+}
+
+.economia:active{
+    background-color: rgb(255, 252, 186);    
 }
 
 .titulo_noticia{
@@ -132,7 +203,7 @@ h2, h3{
 }
 
 .img_recente{
-    width: 100%;
+    width: 90%;
     border-radius: 5%;
     display: flex;
     justify-self: center;
@@ -153,20 +224,35 @@ h2, h3{
     padding-right: 10px;
 }
 
-footer{
+.botao:hover{
+    display: flex;
+    width: 80px;
+    height: 35px;
+    justify-content:center;
     background-color: #740000;
+    color: white;
 }
 
-.rodape {
+.botao:active{
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    width: 80px;
+    height: 35px;
+    justify-content:center;
+    background-color: #f8e3e3;
+    color:#740000;
+}
+
+footer{
+    background-color: #740000;
     color: white;
     font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
 }
 
 .botao_contato{
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid #36ff57;
     display: flex;
     justify-self: center;
@@ -179,6 +265,23 @@ footer{
     padding: 5px;
 }
 
+.botao_contato:hover{
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    color: white;
+    background-color: #36ff57;
+    font-family: Arial, sans-serif;
+    height: 25px;
+    align-items: center;
+    font-size: medium;
+    padding: 5px;
+}
+
+.botao_contato:active{
+    background-color: #d5ffd2;
+}
+
 .contato{
     font-family: Arial, sans-serif;
     display: flex;
@@ -186,4 +289,240 @@ footer{
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: medium;
+}
+
+/* Media query - Tablets */
+@media (min-width: 768px) and (max-width:1023px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .link_menu{
+        display: flex;
+        font-size: x-large;
+        padding-bottom: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destaque{
+        width: 85%;
+    }
+
+    .imagem {
+        width: 70%;
+        border-radius: 5%;
+        display: flex;
+        justify-self: center;
+    }
+
+    .descricao{
+        font-size: larger;
+    }
+
+    .autor{
+        font-size: larger;
+    }
+
+    .data{
+        font-size: larger;
+    }
+
+    .titulo_noticia{
+        font-size:x-large;
+    }
+
+    .recentes{
+        width: 70%;
+    }
+
+    .img_recente{
+        width: 90%;
+        border-radius: 5%;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .botao{
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .botao:hover{
+        height: 35px;
+        width: 95px;
+    }
+
+    .botao:active{
+        width: 95px;
+        height: 35px;
+    } 
+
+    .esporte{
+        font-size: 22px;
+    }
+
+    .tech{
+        font-size: 22px;
+    }
+
+    .economia{
+        font-size: 22px;
+    }
+
+    footer{
+        font-size: larger;
+    }
+
+    .botao_contato{
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .botao_contato:hover{
+        height: 35px;
+        width: 100px;
+        font-size: 22px;
+    }
+
+    .contato{
+        font-size: larger;
+    }
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+/* Media Query - Celular */ 
+@media (max-width: 767px) {
+   header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .link_menu{
+        display: flex;
+        font-size: x-large;
+        padding-bottom: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destaque{
+        width: 85%;
+    }
+
+    .imagem {
+        width: 70%;
+        border-radius: 5%;
+        display: flex;
+        justify-self: center;
+    }
+
+    .descricao{
+        font-size: larger;
+    }
+
+    .autor{
+        font-size: larger;
+    }
+
+    .data{
+        font-size: larger;
+    }
+
+    .titulo_noticia{
+        font-size:x-large;
+    }
+
+    .recentes{
+        width: 70%;
+    }
+
+    .img_recente{
+        width: 90%;
+        border-radius: 5%;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .botao{
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .botao:hover{
+        height: 35px;
+        width: 95px;
+    }
+
+    .botao:active{
+        width: 95px;
+        height: 35px;
+    } 
+
+    .esporte{
+        font-size: 22px;
+    }
+
+    .tech{
+        font-size: 22px;
+    }
+
+    .economia{
+        font-size: 22px;
+    }
+
+    footer{
+        font-size: larger;
+    }
+
+    .botao_contato{
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .botao_contato:hover{
+        height: 35px;
+        width: 100px;
+        font-size: 22px;
+    }
+
+    .contato{
+        font-size: larger;
+    }
+
+    h3{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
 }
